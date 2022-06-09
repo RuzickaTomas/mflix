@@ -1,4 +1,4 @@
-# Mfix 17
+# Mflix 17
 
 This project serves as a template for anyone following Java course of MongoDB university.
 I want to share this updated project, because I wanted to use latest java, but example project was
