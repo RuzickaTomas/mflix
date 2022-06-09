@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.HandlingErrorsTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.145 s <<< FAILURE! - in mflix.api.daos.HandlingErrorsTest
+testNoUserDups  Time elapsed: 0.078 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <mflix.api.daos.IncorrectDaoOperation> but was: <com.mongodb.MongoWriteException>
+	at mflix.api.daos.HandlingErrorsTest.testNoUserDups(HandlingErrorsTest.java:57)
+Caused by: com.mongodb.MongoWriteException: E11000 duplicate key error collection: sample_mflix.users index: email_1 dup key: { email: null }
+	at mflix.api.daos.HandlingErrorsTest.lambda$testNoUserDups$0(HandlingErrorsTest.java:59)
+	at mflix.api.daos.HandlingErrorsTest.testNoUserDups(HandlingErrorsTest.java:57)
+

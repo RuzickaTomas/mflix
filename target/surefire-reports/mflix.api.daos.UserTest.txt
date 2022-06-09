@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.UserTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 0.639 s <<< FAILURE! - in mflix.api.daos.UserTest
+testLogin  Time elapsed: 0.141 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Should be able to create user sesssion. ==> expected: <true> but was: <false>
+	at mflix.api.daos.UserTest.testLogin(UserTest.java:76)
+
+testRegisterUser  Time elapsed: 0.147 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "mflix.api.models.User.getName()" because "user" is null
+	at mflix.api.daos.UserTest.testRegisterUser(UserTest.java:67)
+
+testDeleteUser  Time elapsed: 0.147 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: You should be able to delete correctly the testDb user. Check your delete filter ==> expected: <true> but was: <false>
+	at mflix.api.daos.UserTest.testDeleteUser(UserTest.java:100)
+
+testLogout  Time elapsed: 0.2 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Should have deleted user from sessions collection - check your logout method ==> expected: <true> but was: <false>
+	at mflix.api.daos.UserTest.testLogout(UserTest.java:91)
+

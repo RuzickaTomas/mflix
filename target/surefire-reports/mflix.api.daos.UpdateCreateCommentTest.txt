@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.UpdateCreateCommentTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.36 s <<< FAILURE! - in mflix.api.daos.UpdateCreateCommentTest
+testUserAddCommentWithNoID  Time elapsed: 0.078 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected mflix.api.daos.IncorrectDaoOperation to be thrown, but nothing was thrown.
+	at mflix.api.daos.UpdateCreateCommentTest.testUserAddCommentWithNoID(UpdateCreateCommentTest.java:113)
+
+testAddCommentUsingObjectId  Time elapsed: 0.097 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at mflix.api.daos.UpdateCreateCommentTest.testAddCommentUsingObjectId(UpdateCreateCommentTest.java:145)
+
+testUserUpdatesOwnComments  Time elapsed: 0.059 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Should be able to update his own comments. Check updateComment implementation ==> expected: <true> but was: <false>
+	at mflix.api.daos.UpdateCreateCommentTest.testUserUpdatesOwnComments(UpdateCreateCommentTest.java:88)
+
+testAddCommentWithId  Time elapsed: 0.057 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Comment should have been correctly added. Check your addComments method ==> expected: not <null>
+	at mflix.api.daos.UpdateCreateCommentTest.testAddCommentWithId(UpdateCreateCommentTest.java:122)
+

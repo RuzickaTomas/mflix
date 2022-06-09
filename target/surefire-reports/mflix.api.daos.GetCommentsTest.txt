@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.GetCommentsTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.335 s <<< FAILURE! - in mflix.api.daos.GetCommentsTest
+testGetMovieComments  Time elapsed: 0.119 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "commentDocs" is null
+	at mflix.api.daos.GetCommentsTest.testGetMovieComments(GetCommentsTest.java:69)
+
+testInsertedComment  Time elapsed: 0.111 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "commentDocs" is null
+	at mflix.api.daos.GetCommentsTest.testInsertedComment(GetCommentsTest.java:89)
+

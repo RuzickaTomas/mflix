@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.TimeoutsTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 1.24 s <<< FAILURE! - in mflix.api.daos.TimeoutsTest
+testConfiguredConnectionTimeoutMs  Time elapsed: 0.123 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.mongodb.ConnectionString.getConnectTimeout()" is null
+	at mflix.api.daos.TimeoutsTest.testConfiguredConnectionTimeoutMs(TimeoutsTest.java:58)
+
+testConfiguredWtimeout  Time elapsed: 0.06 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.mongodb.WriteConcern.getWTimeout(java.util.concurrent.TimeUnit)" is null
+	at mflix.api.daos.TimeoutsTest.testConfiguredWtimeout(TimeoutsTest.java:49)
+

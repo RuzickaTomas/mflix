@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.FacetedSearchTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 0.35 s <<< FAILURE! - in mflix.api.daos.FacetedSearchTest
+testRatingRuntimeBuckets  Time elapsed: 0.114 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.util.ArrayList.size()" because "allMovies" is null
+	at mflix.api.daos.FacetedSearchTest.testRatingRuntimeBuckets(FacetedSearchTest.java:47)
+
+testFacetedSearchPaging  Time elapsed: 0.11 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Should return a list of one faceted document ==> expected: <1> but was: <44>
+	at mflix.api.daos.FacetedSearchTest.testFacetedSearchPaging(FacetedSearchTest.java:66)
+
+testFacetedMultipleCast  Time elapsed: 0.122 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Should return a list of one faceted document ==> expected: <1> but was: <56>
+	at mflix.api.daos.FacetedSearchTest.testFacetedMultipleCast(FacetedSearchTest.java:88)
+

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.DeleteCommentTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.452 s <<< FAILURE! - in mflix.api.daos.DeleteCommentTest
+testDeleteInvalidCommentId  Time elapsed: 0.133 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at mflix.api.daos.DeleteCommentTest.testDeleteInvalidCommentId(DeleteCommentTest.java:81)
+
+testDeleteOfOwnedComment  Time elapsed: 0.07 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Should be able to delete owns comments: Check your deleteComment() method ==> expected: <true> but was: <false>
+	at mflix.api.daos.DeleteCommentTest.testDeleteOfOwnedComment(DeleteCommentTest.java:57)
+
